@@ -1,0 +1,15 @@
+/* insere os governadores */ 
+INSERT INTO tbGovernador (idtbGovernador, nome, email, cpf) values (1, 'Beto Richa', 'betoricha@pr.gov.br', 1234567);
+INSERT INTO tbGovernador (idtbGovernador, nome, email, cpf) values ((select max(idtbGovernador)+1 from tbGovernador), 'Tião Viana', 'tiaoviana@governador.br', 222);
+INSERT INTO tbGovernador (idtbGovernador, nome, email, cpf) values ((select max(idtbGovernador)+1 from tbGovernador), 'Renan Filho', 'renanfilho@governador.br', 254444);
+INSERT INTO tbGovernador (idtbGovernador, nome, email, cpf) values ((select max(idtbGovernador)+1 from tbGovernador), 'Jose Melo', 'josemelo@governador.br', 123123123);
+INSERT INTO tbGovernador (idtbGovernador, nome, email, cpf) values ((select max(idtbGovernador)+1 from tbGovernador), 'Rui Costa', 'ruicosta@governador.br', 3212312);
+INSERT INTO tbGovernador (idtbGovernador, nome, email, cpf) values ((select max(idtbGovernador)+1 from tbGovernador), 'Camilo Santana', 'camilosantana@governador.br', 987654);
+
+/* INSERE OS ESTADOS */
+INSERT INTO tbEstado (idtbEstado, tbGovernador_idtbGovernador) values ('PR', 1);
+INSERT INTO tbEstado (idtbEstado, tbGovernador_idtbGovernador) values ('AC', 2);
+INSERT INTO tbEstado (idtbEstado, tbGovernador_idtbGovernador) values ('AL', 3);
+INSERT INTO tbEstado (idtbEstado, tbGovernador_idtbGovernador) values ('AM', 4);
+INSERT INTO tbEstado (idtbEstado, tbGovernador_idtbGovernador) values ('BA', 5);
+INSERT INTO tbEstado (idtbEstado, tbGovernador_idtbGovernador) values ('CE', 6);
