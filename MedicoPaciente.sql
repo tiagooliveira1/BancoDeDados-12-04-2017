@@ -27,8 +27,6 @@ CREATE TABLE tbAtendimento (
   idtbAtendimento INTEGER NOT NULL ,
   tbMedico_tbPessoa_idtbPessoa INTEGER NOT NULL,
   tbPaciente_tbPessoa_idtbPessoa INTEGER NOT NULL,
-  paciente INTEGER ,
-  medico INTEGER ,
   data_atendimento DATE,
   finalizado CHAR(1),
   CONSTRAINT tbAtendimento_pk PRIMARY KEY (idtbAtendimento),
